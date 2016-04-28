@@ -1,51 +1,51 @@
 {
-    "name": "mollie-reseller-es6",
-    "version": "0.0.1",
-    "description": "Mollie Reseller ES6 API",
-    "main": "index.js",
-    "scripts": {
-        "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- ./test/ --recursive",
-        "dev": "nodemon --harmony --use-strict server.js",
-        "lint": "$(npm bin)/eslint .",
-        "eslint-pre-commit": "./scripts/eslint-pre-commit",
-        "auto-test": "nodemon --ignore coverage/ -x \"npm test && npm run lint\""
-    },
-    "pre-commit": [
-        "eslint-pre-commit",
-        "lint",
-        "test"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@bitbucket.org/notores/mollie-reseller-es6.git"
-    },
-    "keywords": [
-        "mollie",
-        "mollie-reseller",
-        "reseller",
-        "mollie-reseller-es6",
-        "ideal",
-        "creditcard"
-    ],
-    "author": "Renzo Roso <renzo@geex.company>",
-    "license": "GPL-3.0",
-    "homepage": "https://bitbucket.org/notores/mollie-reseller-es6#readme",
-    "dependencies": {
-        "lodash": "^4.11.1",
-        "mollie-es6": "^2.0.0",
-        "request": "^2.72.0",
-        "thunkify": "^2.1.2",
-        "xml2js": "^0.4.16"
-    },
-    "devDependencies": {
-        "co": "^4.6.0",
-        "eslint": "^1.10.3",
-        "eslint-config-defaults": "^7.1.1",
-        "eslint-plugin-filenames": "^0.2.0",
-        "istanbul": "^0.4.1",
-        "mocha": "^2.3.4",
-        "pre-commit": "^1.1.2",
-        "should": "^7.1.1",
-        "sinon": "^1.17.3"
-    }
+  "name": "mollie-reseller-es6",
+  "version": "0.1.0",
+  "description": "Mollie Reseller ES6 API",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- ./test/ --recursive",
+    "dev": "nodemon --harmony --use-strict server.js",
+    "lint": "$(npm bin)/eslint .",
+    "eslint-pre-commit": "./scripts/eslint-pre-commit",
+    "auto-test": "nodemon --ignore coverage/ -x \"npm test && npm run lint\""
+  },
+  "pre-commit": [
+    "eslint-pre-commit",
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/notores/mollie-reseller-es6.git"
+  },
+  "keywords": [
+    "mollie",
+    "mollie-reseller",
+    "reseller",
+    "mollie-reseller-es6",
+    "ideal",
+    "creditcard"
+  ],
+  "author": "Renzo Roso <renzo@geex.company>",
+  "license": "GPL-3.0",
+  "homepage": "https://bitbucket.org/notores/mollie-reseller-es6#readme",
+  "dependencies": {
+    "lodash": "^4.11.1",
+    "mollie-es6": "^2.0.0",
+    "request": "^2.72.0",
+    "thunkify": "^2.1.2",
+    "xml2js": "^0.4.16"
+  },
+  "devDependencies": {
+    "co": "^4.6.0",
+    "eslint": "^1.10.3",
+    "eslint-config-defaults": "^7.1.1",
+    "eslint-plugin-filenames": "^0.2.0",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4",
+    "pre-commit": "^1.1.2",
+    "should": "^7.1.1",
+    "sinon": "^1.17.3"
+  }
 }
