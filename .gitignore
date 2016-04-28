@@ -2,3 +2,4 @@ node_modules/
 coverage/
 .idea
 test/test_keys.json
+test/test_users.json

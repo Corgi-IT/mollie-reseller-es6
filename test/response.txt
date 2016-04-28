@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response version="v1">
+    <success>true</success>
+    <resultcode>10</resultcode>
+    <resultmessage>Customer name exists and password is correct.</resultmessage>
+    <exists>false</exists>
+    <partner_id>1234567</partner_id>
+</response>

@@ -4,7 +4,7 @@
     "description": "Mollie Reseller ES6 API",
     "main": "index.js",
     "scripts": {
-        "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- ./test/ --recursive --compilers js:babel/register",
+        "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- ./test/ --recursive",
         "dev": "nodemon --harmony --use-strict server.js",
         "lint": "$(npm bin)/eslint .",
         "eslint-pre-commit": "./scripts/eslint-pre-commit",
@@ -32,10 +32,12 @@
     "homepage": "https://bitbucket.org/notores/mollie-reseller-es6#readme",
     "dependencies": {
         "lodash": "^4.11.1",
-        "request": "^2.72.0"
+        "mollie-es6": "^2.0.0",
+        "request": "^2.72.0",
+        "thunkify": "^2.1.2",
+        "xml2js": "^0.4.16"
     },
     "devDependencies": {
-        "babel": "^5.8.29",
         "co": "^4.6.0",
         "eslint": "^1.10.3",
         "eslint-config-defaults": "^7.1.1",
