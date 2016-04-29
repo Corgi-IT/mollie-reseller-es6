@@ -109,6 +109,58 @@ describe('API', function () {
         });
     });
 
+    describe('.accountClaim', function () {
+        describe('Error', function () {
+
+            it('Should throw an error if something goes wrong', co.wrap(function *() {
+                try {
+                    yield api.accountClaim();
+                    check = 1
+                } catch (error) {
+                    check = 2
+                }
+                check.should.equal(2);
+            }));
+
+            it('Should throw an error if no username is given', co.wrap(function *() {
+                try {
+                    yield api.accountClaim(null, 'fake_password');
+                    check = 1
+                } catch (error) {
+                    error.should.have.property('error', 'No username or password supplied');
+                    check = 2
+                }
+                check.should.equal(2);
+            }));
+
+            it('Should throw an error if no password is given', co.wrap(function *() {
+                try {
+                    yield api.accountClaim('fake_username', null);
+                    check = 1
+                } catch (error) {
+                    error.should.have.property('error', 'No username or password supplied');
+                    check = 2
+                }
+                check.should.equal(2);
+            }));
+        });
+
+        describe('Success', function () {
+            it('Should not throw an error if an unknown account is given', co.wrap(function *() {
+                try {
+                    const result = yield api.accountClaim('fake_username', 'fake_password');
+                    result.should.be.an.Object();
+                    result.success.should.equal(false);
+                    check = 1
+                } catch (error) {
+                    console.log(error);
+                    check = 2
+                }
+                check.should.equal(1);
+            }));
+        });
+    });
+
     describe('.accountValid', function () {
         describe('Error', function () {
             it('Should throw an error if something goes wrong', co.wrap(function *() {
@@ -215,7 +267,8 @@ describe('API', function () {
                 check.should.equal(4);
 
                 try {
-                    yield api.parseResponse(function() {});
+                    yield api.parseResponse(function () {
+                    });
                     check = 5;
                 } catch (error) {
                     error.should.have.property('error', 'Response is not a String');
@@ -242,6 +295,19 @@ describe('API', function () {
                     const result = yield api.parseResponse(xml);
                     result.should.have.property('success');
                     result.should.have.property('resultcode');
+                    check = 1;
+                } catch (error) {
+                    check = 2;
+                }
+                check.should.equal(1);
+            }));
+
+            it('Should transpile the String, Boolean- and Integer values to Booleans and Integers', co.wrap(function *() {
+                try {
+                    const result = yield api.parseResponse(xml);
+                    result.success.should.be.a.Boolean();
+                    result.resultcode.should.be.an.Number();
+                    result.resultmessage.should.be.a.String();
                     check = 1;
                 } catch (error) {
                     check = 2;
