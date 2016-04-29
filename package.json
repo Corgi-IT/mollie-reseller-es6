@@ -1,6 +1,6 @@
 {
   "name": "mollie-reseller-es6",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Mollie Reseller ES6 API",
   "main": "index.js",
   "scripts": {
