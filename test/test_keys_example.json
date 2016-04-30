@@ -1,5 +1,5 @@
 {
-    "partner_id": "partner_id",
+    "partner_id": 1234567,
     "profile_key": "profile_key",
     "secret": "site_secret"
 }
