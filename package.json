@@ -35,7 +35,7 @@
     "mollie-es6": "^2.0.0",
     "request": "^2.72.0",
     "thunkify": "^2.1.2",
-    "xml2js": "^0.4.16"
+    "xml2json": "^0.9.0"
   },
   "devDependencies": {
     "co": "^4.6.0",

@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <response version="v1">
-    <success>true</success>
-    <resultcode>10</resultcode>
-    <resultmessage>Customer name exists and password is correct.</resultmessage>
-    <exists>false</exists>
-    <partner_id>1234567</partner_id>
+  <items>
+    <profile>
+      <name>Site1</name>
+      <hash>AB295D2C</hash>
+      <website>http://www.domain.com</website>
+      <sector>0</sector>
+      <category>1234</category>
+      <phone>0123456789</phone>
+      <email>info@domain.com</email>
+      <verified>true</verified>
+      <api_keys>
+        <test>test_somehashstringthingythatslong</test>
+        <live>live_johncenaaaaaaaaaaaaaaaaaaaaaa</live>
+      </api_keys>
+    </profile>
+    <profile>
+      <name>Site2</name>
+      <hash>AB295D2D</hash>
+      <website>http://sub.domain.com</website>
+      <sector>0</sector>
+      <category>2345</category>
+      <phone>0123456789</phone>
+      <email>info@domain.com</email>
+      <verified>true</verified>
+      <api_keys>
+        <test>test_somelongtesthashstringthingy</test>
+        <live>live_teamcaporteamironmanimteamironman</live>
+      </api_keys>
+    </profile>
+  </items>
+  <success>true</success>
+  <resultcode>10</resultcode>
+  <resultmessage/>
 </response>
