@@ -44,7 +44,7 @@ If you're managing multiple reseller accounts on 1 server, it's ofcourse also po
     const account_2 = new API(keys_2);
 ```
 
-## Implemented Functions ##
+## Implemented instance functions ##
 
 ### Account ###
 
@@ -102,4 +102,54 @@ If you're managing multiple reseller accounts on 1 server, it's ofcourse also po
     } catch (e) {
         // Handle error
     }
+```
+
+## Static functions ##
+
+Here are some static functions that might prove useful, maybe even for other projects!
+
+### stringToEncodedURI ###
+
+URIencodes a String as the way Mollie requires us to.
+The standard `encodeURIComponent(String)` functions is not enough.
+
+```ES6
+    const string_to_be_encoded = '/api/reseller/v1/account-valid?partner_id=1234567&etc=more';
+    const encoded_string = API.stringToEncodedURI(string_to_be_encoded);
+```
+
+### getLegalForms ###
+
+Returns an array with the legal forms Mollie accepts.
+Might I miss some, please do a pull request :)
+
+```ES6
+    const legal_forms = API.getLegalForms();
+```
+
+Printing this would result in:
+```ES6
+    [
+        {
+            "key": "eenmanszaak",
+            "value": "Eenmanszaak (The Netherlands)"
+        },
+        {
+            "key": "eenmanszaak-be",
+            "value": "Eenmanszaak (Belgium)"
+        },
+        {
+            "key": "eenmans-bvba-be",
+            "value": "Eenmans besloten vennootschap met beperkte aansprakelijkheid"
+        },
+        {
+            "key": "maatschap",
+            "value": "Maatschap"
+        },
+        {
+            "key": "vof",
+            "value": "VOF (The Netherlands)"
+        },
+    // Etc etc etc
+    ]
 ```
