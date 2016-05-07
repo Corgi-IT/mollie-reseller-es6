@@ -284,6 +284,24 @@ describe('API', function () {
                 }
                 check.should.equal(1);
             }));
+
+            it('Should not throw an error if an unconnected or nonexistent account is given', wrap(function *() {
+                try {
+                    const result = yield api.profiles({
+                        username: 'JOHN',
+                        password: 'CENA!!!!!!'
+                    });
+
+                    result.should.be.an.Object();
+
+                    check = 1;
+                } catch (error) {
+                    console.log(error);
+                    error.should.have.property('error');
+                    check = 2;
+                }
+                check.should.equal(1);
+            }));
         });
     });
 

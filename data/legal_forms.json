@@ -1,0 +1,166 @@
+[
+    {
+        "key": "eenmanszaak",
+        "value": "Eenmanszaak (The Netherlands)"
+    },
+    {
+        "key": "eenmanszaak-be",
+        "value": "Eenmanszaak (Belgium)"
+    },
+    {
+        "key": "eenmans-bvba-be",
+        "value": "Eenmans besloten vennootschap met beperkte aansprakelijkheid"
+    },
+    {
+        "key": "maatschap",
+        "value": "Maatschap"
+    },
+    {
+        "key": "vof",
+        "value": "VOF (The Netherlands)"
+    },
+    {
+        "key": "vof-be",
+        "value": "VOF (Belgium)"
+    },
+    {
+        "key": "bv",
+        "value": "BV"
+    },
+    {
+        "key": "bvba-be",
+        "value": "BVBA"
+    },
+    {
+        "key": "cv",
+        "value": "CV"
+    },
+    {
+        "key": "commv-be",
+        "value": "Comm.v"
+    },
+    {
+        "key": "commva-be",
+        "value": "Comm.va"
+    },
+    {
+        "key": "nv",
+        "value": "NV (The Netherlands)"
+    },
+    {
+        "key": "nv-be",
+        "value": "NV (Belgium)"
+    },
+    {
+        "key": "cooperatie",
+        "value": "Cooperatie"
+    },
+    {
+        "key": "cvoa-be",
+        "value": "Cooperatieve vennootschap"
+    },
+    {
+        "key": "cvba-be",
+        "value": "Cooperatieve vennootschap"
+    },
+    {
+        "key": "stichting",
+        "value": "Stichting (The Netherlands)"
+    },
+    {
+        "key": "stichting-be",
+        "value": "Stichting (Belgium)"
+    },
+    {
+        "key": "vereniging",
+        "value": "Vereniging (The Netherlands)"
+    },
+    {
+        "key": "vzw-be",
+        "value": "Vereniging zonder winstoogmerk (Belgium)"
+    },
+    {
+        "key": "overheid",
+        "value": "Overheidsinstantie"
+    },
+    {
+        "key": "kerkgenootschap",
+        "value": "Kerkgenootschap"
+    },
+    {
+        "key": "kroondomein",
+        "value": "Kroondomein"
+    },
+    {
+        "key": "lbvn-be",
+        "value": "Landbouwvennootschap (Belgium)"
+    },
+    {
+        "key": "esv-be",
+        "value": "Economisch samenwerkingsverband (Belgium)"
+    },
+    {
+        "key": "es-be",
+        "value": "Europese vennootschap (Belgium)"
+    },
+    {
+        "key": "vvzrl-be",
+        "value": "Vennootschap of vereniging zonder rechtspersoonlijkheid (Belgium)"
+    },
+    {
+        "key": "gemeentebedri-be",
+        "value": "Autonoom gemeentebedrijf (Belgium)"
+    },
+    {
+        "key": "niet-be",
+        "value": "Buitenlandse onderneming (Belgium)"
+    },
+    {
+        "key": "buitenlandse-ven",
+        "value": "Buitenlandse vennootschap in Nederland geregistreerd (The Netherlands)"
+    },
+    {
+        "key": "einzelunternehme",
+        "value": "Einzelunternehmen"
+    },
+    {
+        "key": "gesellscahft-bur",
+        "value": "Gesellschaft burgerlichen Rechts"
+    },
+    {
+        "key": "eingetragener-",
+        "value": "Eingetragener Verein (e.V.)"
+    },
+    {
+        "key": "versicherungsver",
+        "value": "Versicherungsverein auf Gegenseitigkeit"
+    },
+    {
+        "key": "ggmbh-de",
+        "value": "Gemeinnutzige Gesellschaft mit beschränkter Haftung (gGmbH)"
+    },
+    {
+        "key": "gmbh-de",
+        "value": "Gesellschaft mit beschrankter Haftung (GmbH) "
+    },
+    {
+        "key": "aktiengesellscha",
+        "value": "Aktiengesellschaft (AG)"
+    },
+    {
+        "key": "eingetragene-gen",
+        "value": "Eingetragene Genossenschaft (eG)"
+    },
+    {
+        "key": "stiftung-de",
+        "value": "Stiftung des privaten Rechts"
+    },
+    {
+        "key": "ein-personen-gm",
+        "value": "Ein-Personen-GmbH"
+    },
+    {
+        "key": "niet-nl",
+        "value": "Other"
+    }
+]
